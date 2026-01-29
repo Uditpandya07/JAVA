@@ -22,8 +22,8 @@ public class Q2{
 
         //reverse string:
 
-        String rev ="";
-        for(int i = s1.length()-1; i>=0; i--){
+        String rev = "";
+        for (int i = s1.length() - 1; i >= 0; i--) {
             rev += s1.charAt(i);
         }
         System.out.println("The string after reversing is :" + rev);
@@ -56,10 +56,9 @@ public class Q2{
         char ch = sc.next().charAt(0);
 
         int pos = s5.indexOf(ch);
-        if(pos != -1){
+        if (pos != -1) {
             System.out.println("Position of the entered character: " + pos);
-        }
-        else{
+        } else {
             System.out.println("Entered character is not present!");
         }
         sc.nextLine();
@@ -70,10 +69,9 @@ public class Q2{
         String s7 = sc.nextLine();
         String rev2 = new StringBuilder(s7).reverse().toString();
 
-        if(s7.equals(rev2)){
+        if (s7.equals(rev2)) {
             System.out.println("Entered string is a palindrome!");
-        }
-        else{
+        } else {
             System.out.println("Entered string is not a palindrome!");
         }
 
@@ -84,23 +82,22 @@ public class Q2{
 
         int words = s8.trim().split("\\s++").length;
         int vowels = 0;
-        int consonants  = 0;
+        int consonants = 0;
 
-        for (int i = 0 ; i < s8.length(); i++){
+        for (int i = 0; i < s8.length(); i++) {
             char c = Character.toLowerCase(s8.charAt(i));
 
-            if ( c >= 'a' && c <= 'z'){
-                if("aeiou".indexOf(c)!=-1){
+            if (c >= 'a' && c <= 'z') {
+                if ("aeiou".indexOf(c) != -1) {
                     vowels++;
-                }
-                else{
+                } else {
                     consonants++;
                 }
             }
         }
-        System.out.println("Number of words: "+ words);
-        System.out.println("Number of vowels: "+ vowels);
-        System.out.println("Number of consonants: "+ consonants);
+        System.out.println("Number of words: " + words);
+        System.out.println("Number of vowels: " + vowels);
+        System.out.println("Number of consonants: " + consonants);
 
     }
 }

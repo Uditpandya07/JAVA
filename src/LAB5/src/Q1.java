@@ -19,7 +19,7 @@ public class Q1 {
         System.out.println("Enter the basic salary:");
         double basic = sc.nextDouble();
 
-        sales s = new sales(id,name);
+        sales s = new sales(id, name);
         double earn = s.earnings(basic);
 
 
